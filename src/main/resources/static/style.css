@@ -1,0 +1,114 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.container-full {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-container {
+    background-color: #AAABB8;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resizable-container {
+    display: flex;
+    flex-grow: 1;
+    height: 80vh;
+}
+
+.left-container {
+    width: 75%;
+    background-color: #DEF2F1;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.resizer {
+    width: 5px;
+    cursor: ew-resize;
+    background: #ccc;
+    height: 100%;
+}
+
+.right-container {
+    width: 25%;
+    background-color: #EAE7DC;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+.card {
+    margin: 10px 0;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control-textarea {
+    resize: none;
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+.time-created {
+    font-size: 0.8rem;
+    color: #555;
+}
