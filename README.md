@@ -17,7 +17,7 @@ This is a To-Do List web application built using Spring Boot, Thymeleaf, and MyS
 ## How to Run:
 1. Clone this repository:
    ```sh
-   git clone https://github.com/yourusername/todolist.git
+   git clone https://github.com/Nija89/My-To-Do-List.git
 
 2. Set up your MySQL database.
 
