@@ -1,6 +1,8 @@
 package com.myProject.todolist.Entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 import java.sql.Timestamp;
 
@@ -12,12 +14,19 @@ public class UserList {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
+
     @Column(name = "head")
+    @NotNull(message = "This Field cannot be Empty.")
     private String head;
+
     @Column(name = "body")
+    @NotNull(message = "This Field cannot be Empty.")
+    @Size(min=5, message = "This field must contain at least 5 character.")
     private String body;
+
     @Column(name = "time_created", nullable = true)
     private Timestamp timeCreated;
+
     public UserList(){}
 
     public int getId() {

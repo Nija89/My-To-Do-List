@@ -87,7 +87,7 @@ html {
 .form-control-textarea {
     resize: none;
     width: 100%;
-    min-height: 80px;
+    min-height: 300px;
     padding: 10px;
     overflow-y: auto;
 }
